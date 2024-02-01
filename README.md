@@ -7,6 +7,6 @@ Critique it all you want, if it works for me it works for me y'know.
 
 - [x] LSP (mason, lsp-zero, nvim-lspconfig)
 - [x] Theme
-- [ ] AutoCompletion
+- [x] AutoCompletion
 - [ ] FzF
 - [ ] Harpoon
