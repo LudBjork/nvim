@@ -30,7 +30,7 @@ local plugins = {
     build = ":TSUpdate"},
 
     --theme 
-    {'folke/tokyonight.nvim', lazy = true, priority = 1000, opts = {
+    {'luisiacc/gruvbox-baby', priority = 1000, opts = {
     style = "night",
     transparent = true
     }},
