@@ -1,7 +1,4 @@
-local theme = require("dracula")
-
-
-theme.setup({
-    transparent_bg = true,
+require("tokyonight").setup({
+    style = "night",
+    transparent = true
 })
-vim.cmd.colorscheme('blue')
