@@ -13,6 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
+    -- force BG transparency
+    {'xiyaowong/transparent.nvim'},
+
     -- LSP 
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
