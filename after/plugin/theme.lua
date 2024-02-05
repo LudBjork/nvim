@@ -1,3 +1,5 @@
-local theme = require("dracula")
-
-vim.cmd.colorscheme("dracula")
+require("tokyonight").setup({
+    style = "night",
+    transparent = true
+})
+vim.cmd[[colorscheme tokyonight]]

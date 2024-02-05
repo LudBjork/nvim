@@ -33,8 +33,11 @@ local plugins = {
     build = ":TSUpdate"},
 
     --theme 
-    {'Mofiqul/dracula.nvim'},
-    -- init.lua:
+    {'folke/tokyonight.nvim', lazy = true, priority = 1000, opts = {
+    style = "night",
+    transparent = true
+    }},
+    -- telescope
     {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
 -- or                              , branch = '0.1.x',
