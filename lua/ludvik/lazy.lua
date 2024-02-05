@@ -33,10 +33,7 @@ local plugins = {
     build = ":TSUpdate"},
 
     --theme 
-    {'folke/tokyonight.nvim', lazy = true, priority = 1000, opts = {
-    style = "night",
-    transparent = true
-    }},
+    {'folke/tokyonight.nvim', lazy = true, priority = 1000  },
     -- telescope
     {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
