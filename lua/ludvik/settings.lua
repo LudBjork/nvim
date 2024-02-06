@@ -16,6 +16,8 @@ opt.smartindent = true
 -- Searching settings, I don't like highlighting
 opt.hlsearch = false
 opt.incsearch = true
+opt.ignorecase = true
+opt.smartcase = true
 
 -- Scroll offset
 opt.scrolloff = 12
