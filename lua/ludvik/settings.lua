@@ -27,3 +27,4 @@ opt.termguicolors = true
 
 opt.isfname:append("@-@")
 opt.updatetime = 50
+

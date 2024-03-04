@@ -1,9 +1,8 @@
 local lsp_zero = require('lsp-zero')
-require("mason").setup()
-require("mason-lspconfig").setup()
 
+require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {},
+    ensure_installed = {"tsserver", "rust_analyzer", "html", "remark_ls", "yamlls"},
     handlers = {
         lsp_zero.default_setup,
     },
