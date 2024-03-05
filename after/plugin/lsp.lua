@@ -2,7 +2,7 @@ local lsp_zero = require('lsp-zero')
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {"tsserver", "rust_analyzer", "html", "remark_ls", "yamlls"},
+    ensure_installed = {"tsserver", "lua_ls","rust_analyzer", "html", "remark_ls", "yamlls"},
     handlers = {
         lsp_zero.default_setup,
     },
@@ -27,4 +27,29 @@ cmp.setup({
         ['<C-Space>'] = cmp.mapping.complete(),
     }),
 })
+
+
+-- TypeScript specific, only for .ts or .tsx files
+local function organize_imports()
+  local params = {
+    command = "_typescript.organizeImports",
+    arguments = {vim.api.nvim_buf_get_name(0)},
+    title = ""
+  }
+  vim.lsp.buf.execute_command(params)
+end
+
+local lspconfig = require "lspconfig"
+lspconfig.tsserver.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+    commands = {
+        OrganizeImports = {
+            organize_imports,
+            description = "Organize Imports"
+        }
+    }
+}
+
+vim.keymap.set("n", "<leader>oo", organize_imports) -- organise imports keymap
 
