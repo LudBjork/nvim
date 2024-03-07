@@ -15,6 +15,9 @@ vim.keymap.set("n", "<C-n>", function() harpoon:list():select(4) end)
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 
+-- Pop last added Harpoon file 
+vim.keymap.set("n", "<C-S-BS>", function() 
+end)
 
 -- basic telescope configuration
 local conf = require("telescope.config").values
