@@ -42,3 +42,7 @@ vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
 
 
 vim.keymap.set("n", "<leader>dl", function() table.remove(harpoon:list().items) end, {desc = "Pop last added file"})
+vim.keymap.set("n", "<leader>d1", function() table.remove(harpoon:list().items, 1) end, {desc = "Pop specfic file"})
+vim.keymap.set("n", "<leader>d2", function() table.remove(harpoon:list().items, 2) end, {desc = "Pop specfic file"})
+vim.keymap.set("n", "<leader>d3", function() table.remove(harpoon:list().items, 3) end, {desc = "Pop specfic file"})
+vim.keymap.set("n", "<leader>d4", function() table.remove(harpoon:list().items, 4) end, {desc = "Pop specfic file"}) -- Might delete this because <leader>dl does the same 
