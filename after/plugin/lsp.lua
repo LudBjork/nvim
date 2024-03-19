@@ -2,7 +2,7 @@ local lsp_zero = require('lsp-zero')
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {"tsserver", "lua_ls","rust_analyzer", "html", "remark_ls", "yamlls"},
+    ensure_installed = {"tsserver", "lua_ls","rust_analyzer", "html", "marksman", "yamlls"},
     handlers = {
         lsp_zero.default_setup,
     },
@@ -50,6 +50,10 @@ lspconfig.tsserver.setup{
         }
     }
 }
+
+lspconfig.marksman.setup{}
+lspconfig.rust_analyzer.setup{}
+lspconfig.yamlls.setup{}
 
 vim.keymap.set("n", "<leader>oo", organize_imports) -- organise imports keymap
 
