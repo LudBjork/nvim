@@ -41,8 +41,4 @@ vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
 
 
-local function pop_recently_added(harpoon_files)
-    local n = #harpoon_files.items
-    table.remove(harpoon_files.items)
-end
-vim.keymap.set("n", "<leader>dl", function() pop_recently_added(harpoon:list()) end, {desc = "Pop last added file"})
+vim.keymap.set("n", "<leader>dl", function() table.remove(harpoon:list().items) end, {desc = "Pop last added file"})
