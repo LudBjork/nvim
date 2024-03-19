@@ -52,6 +52,7 @@ lspconfig.tsserver.setup{
 }
 
 lspconfig.marksman.setup{}
+lspconfig.lua_ls.setup{}
 lspconfig.rust_analyzer.setup{}
 lspconfig.yamlls.setup{}
 
