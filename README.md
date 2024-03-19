@@ -1,4 +1,3 @@
-
 # Personal NeoVim Setup 
 
 Critique it all you want, if it works for me it works for me y'know.
@@ -9,4 +8,4 @@ Critique it all you want, if it works for me it works for me y'know.
 - [x] Theme
 - [x] AutoCompletion
 - [x] FzF (Telescope etc.)
-- [ ] Harpoon
+- [x] Harpoon
