@@ -43,6 +43,11 @@ local plugins = {
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
     }
+    ,
+    {'kevinhwang91/nvim-ufo',
+    dependencies = { 'kevinhwang91/promise-async' }
+}, 
+{'lukas-reineke/indent-blankline.nvim', main = "ibl", opts={}}
 }
 
 require("lazy").setup(plugins)
