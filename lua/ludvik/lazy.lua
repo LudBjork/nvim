@@ -44,10 +44,9 @@ local plugins = {
         dependencies = { "nvim-lua/plenary.nvim" }
     }
     ,
-    {'kevinhwang91/nvim-ufo',
-    dependencies = { 'kevinhwang91/promise-async' }
-}, 
-{'lukas-reineke/indent-blankline.nvim', main = "ibl", opts={}}
+    {'kevinhwang91/nvim-ufo', dependencies = { 'kevinhwang91/promise-async' }},
+    {'lukas-reineke/indent-blankline.nvim', main = "ibl", opts={}},
+    {'nvim-lualine/lualine.nvim',dependencies = { 'nvim-tree/nvim-web-devicons' }}
 }
 
 require("lazy").setup(plugins)
