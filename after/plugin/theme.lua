@@ -1,8 +1,4 @@
 require("tokyonight").setup({
-    style = "night"
-})
-
-require("tokyonight").setup({
     style = "night",
     transparent = true,
     on_highlights = function(hl, c)
@@ -11,6 +7,18 @@ require("tokyonight").setup({
         }
         hl.TelescopeBorder = {
             fg = c.bg_dark,
+        }
+        hl.TelescopePromptBorder = {
+            fg = c.fg_dark,
+        }
+        hl.TelescopePromptTitle = {
+            fg = c.fg_dark,
+        }
+        hl.TelescopePreviewTitle = {
+            fg = c.fg_dark,
+        }
+        hl.TelescopeResultsTitle = {
+            fg = c.fg_dark,
         }
     end,
 })
