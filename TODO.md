@@ -7,4 +7,7 @@ Plugins:
 - [x] AutoCompletion
 - [x] FzF (Telescope etc.)
 - [x] Harpoon
-- [ ] Show git diff
+- [x] Show git diff
+- [x] Indent guides
+- [x] Folding 
+- [x] Lualine
