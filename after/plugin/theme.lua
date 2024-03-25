@@ -6,7 +6,7 @@ require("tokyonight").setup({
             fg = c.fg_dark,
         }
         hl.TelescopeBorder = {
-            fg = c.bg_dark,
+            fg = c.fg_dark,
         }
         hl.TelescopePromptBorder = {
             fg = c.fg_dark,
