@@ -38,6 +38,8 @@ local function organize_imports()
 	vim.lsp.buf.execute_command(params)
 end
 
+require("neodev").setup()
+
 local lspconfig = require("lspconfig")
 lspconfig.tsserver.setup({
 	on_attach = on_attach,
