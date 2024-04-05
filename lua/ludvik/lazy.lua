@@ -30,7 +30,8 @@ local plugins = {
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
 	--theme
-	{ "folke/tokyonight.nvim", lazy = true, priority = 1000 },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
 	-- telescope
 	{
 		"nvim-telescope/telescope.nvim",

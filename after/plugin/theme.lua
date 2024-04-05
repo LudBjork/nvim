@@ -1,25 +1,15 @@
-require("tokyonight").setup({
-	style = "night",
-	transparent = true,
-	on_highlights = function(hl, c)
-		hl.TelescopeNormal = {
-			fg = c.fg_dark,
-		}
-		hl.TelescopeBorder = {
-			fg = c.fg_dark,
-		}
-		hl.TelescopePromptBorder = {
-			fg = c.fg_dark,
-		}
-		hl.TelescopePromptTitle = {
-			fg = c.fg_dark,
-		}
-		hl.TelescopePreviewTitle = {
-			fg = c.fg_dark,
-		}
-		hl.TelescopeResultsTitle = {
-			fg = c.fg_dark,
-		}
-	end,
+require("catppuccin").setup({
+	flavor = "mocha",
+	transparent_background = true,
+	term_colors = true,
+	integrations = {
+		cmp = true,
+		gitsigns = true,
+		telescope = true,
+		treesitter = true,
+		harpoon = true,
+		lsp_trouble = true,
+		lsp_saga = true,
+	},
 })
-vim.cmd([[colorscheme tokyonight-night]])
+vim.cmd.colorscheme("catppuccin")
