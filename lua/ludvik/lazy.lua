@@ -48,6 +48,10 @@ local plugins = {
 	{ "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "mhartington/formatter.nvim" },
 	{ "m4xshen/autoclose.nvim" },
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+	},
 }
 
 require("lazy").setup(plugins)
