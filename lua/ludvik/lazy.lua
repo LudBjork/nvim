@@ -47,6 +47,7 @@ local plugins = {
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "mhartington/formatter.nvim" },
+	{ "m4xshen/autoclose.nvim" },
 }
 
 require("lazy").setup(plugins)
