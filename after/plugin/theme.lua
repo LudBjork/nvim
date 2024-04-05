@@ -1,15 +1,9 @@
-require("catppuccin").setup({
-	flavor = "mocha",
-	transparent_background = true,
-	term_colors = true,
-	integrations = {
-		cmp = true,
-		gitsigns = true,
-		telescope = true,
-		treesitter = true,
-		harpoon = true,
-		lsp_trouble = true,
-		lsp_saga = true,
+require("rose-pine").setup({
+	styles = {
+		transparency = true,
 	},
+
+	term_colors = true,
 })
-vim.cmd.colorscheme("catppuccin")
+
+vim.cmd.colorscheme("rose-pine")

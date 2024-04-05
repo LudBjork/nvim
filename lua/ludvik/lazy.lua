@@ -31,8 +31,7 @@ local plugins = {
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
 	--theme
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-
+	{ "rose-pine/neovim", name = "rose-pine" },
 	-- telescope
 	{
 		"nvim-telescope/telescope.nvim",
