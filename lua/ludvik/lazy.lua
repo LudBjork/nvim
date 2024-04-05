@@ -13,7 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	{ "lewis6991/gitsigns.nvim" },
-
+	-- LSP support for base vim commands
+	{ "folke/neodev.nvim", opts = {} },
 	-- LSP
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
