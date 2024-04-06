@@ -46,7 +46,6 @@ local plugins = {
 	},
 	{ "kevinhwang91/nvim-ufo", dependencies = { "kevinhwang91/promise-async" } },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	{ "mhartington/formatter.nvim" },
 	{ "m4xshen/autoclose.nvim" },
 	{
 		"Exafunction/codeium.vim",

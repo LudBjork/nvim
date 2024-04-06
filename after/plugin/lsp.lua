@@ -17,12 +17,12 @@ cmp.setup({
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
 		{ name = "luasnip", keyword_length = 2 },
-		{ name = "buffer", keyword_length = 3 },
+		{ name = "buffer",  keyword_length = 3 },
 	},
 	formatting = lsp_zero.cmp_format(),
 	mapping = cmp.mapping.preset.insert({
-		["<Tab>"] = cmp.mapping.select_next_item(cmp_select),
-		["<S-Tab>"] = cmp.mapping.select_prev_item(cmp_select),
+		["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+		["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<C-Space>"] = cmp.mapping.complete(),
 	}),
@@ -73,6 +73,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 		vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+		vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, opts)
 		vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
 		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 		vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
