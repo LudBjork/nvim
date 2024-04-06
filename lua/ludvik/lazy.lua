@@ -14,11 +14,17 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	{ "lewis6991/gitsigns.nvim" },
 	-- LSP support for base vim commands
-	{ "folke/neodev.nvim", opts = {} },
+	{
+		"folke/neodev.nvim",
+		opts = {}
+	},
 	-- LSP
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
-	{ "VonHeikemen/lsp-zero.nvim", branch = "v3.x" },
+	{
+		"VonHeikemen/lsp-zero.nvim",
+		branch = "v3.x"
+	},
 	{ "neovim/nvim-lspconfig" },
 	{ "hrsh7th/nvim-cmp" },
 	{ "hrsh7th/cmp-nvim-lsp" },
@@ -28,15 +34,22 @@ local plugins = {
 	{ "hrsh7th/cmp-cmdline" },
 
 	-- tree-sitter
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate"
+	},
 
 	--theme
-	{ "rose-pine/neovim", name = "rose-pine" },
+	{
+		"rose-pine/neovim",
+		name = "rose-pine"
+	},
 	-- telescope
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.5",
-		-- or                              , branch = '0.1.x',
+		-- or
+		-- branch = '0.1.x',
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{
@@ -45,12 +58,17 @@ local plugins = {
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{ "kevinhwang91/nvim-ufo", dependencies = { "kevinhwang91/promise-async" } },
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		opts = {}
+	},
 	{ "m4xshen/autoclose.nvim" },
 	{
 		"Exafunction/codeium.vim",
 		event = "BufEnter",
 	},
+	{ 'nvim-tree/nvim-web-devicons' }
 }
 
 require("lazy").setup(plugins)
