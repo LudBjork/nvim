@@ -57,17 +57,13 @@ local plugins = {
 		branch = "harpoon2",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	{ "kevinhwang91/nvim-ufo", dependencies = { "kevinhwang91/promise-async" } },
+	{ "kevinhwang91/nvim-ufo",      dependencies = { "kevinhwang91/promise-async" } },
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
 		opts = {}
 	},
 	{ "m4xshen/autoclose.nvim" },
-	{
-		"Exafunction/codeium.vim",
-		event = "BufEnter",
-	},
 	{ 'nvim-tree/nvim-web-devicons' }
 }
 
