@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
@@ -16,14 +17,14 @@ local plugins = {
 	-- LSP support for base vim commands
 	{
 		"folke/neodev.nvim",
-		opts = {}
+		opts = {},
 	},
 	-- LSP
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
 	{
 		"VonHeikemen/lsp-zero.nvim",
-		branch = "v3.x"
+		branch = "v3.x",
 	},
 	{ "neovim/nvim-lspconfig" },
 	{ "hrsh7th/nvim-cmp" },
@@ -36,13 +37,13 @@ local plugins = {
 	-- tree-sitter
 	{
 		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate"
+		build = ":TSUpdate",
 	},
 
 	--theme
 	{
 		"rose-pine/neovim",
-		name = "rose-pine"
+		name = "rose-pine",
 	},
 	-- telescope
 	{
@@ -57,14 +58,18 @@ local plugins = {
 		branch = "harpoon2",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	{ "kevinhwang91/nvim-ufo",      dependencies = { "kevinhwang91/promise-async" } },
+	{ "kevinhwang91/nvim-ufo", dependencies = { "kevinhwang91/promise-async" } },
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
-		opts = {}
+		opts = {},
 	},
 	{ "m4xshen/autoclose.nvim" },
-	{ 'nvim-tree/nvim-web-devicons' }
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+	{ "elentok/format-on-save.nvim" },
 }
 
 require("lazy").setup(plugins)

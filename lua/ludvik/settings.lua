@@ -9,15 +9,16 @@ opt.numberwidth = 6
 -- Tab settings
 opt.tabstop = 4
 opt.wrap = false
+opt.linebreak = true
 opt.shiftwidth = 4 -- auto-set indentation
 opt.expandtab = false -- use tabs as tabs, not spaces as tabs
 opt.smartindent = true
 
--- Searching settings, I don't like highlighting
-opt.hlsearch = false
-opt.incsearch = true
+-- Searching settings
+opt.hlsearch = false -- don't highlight everywhere
+opt.incsearch = true -- show match as you type
 opt.ignorecase = true
-opt.smartcase = true
+opt.smartcase = true -- case-sensitive search only when search-string is using upper-case
 
 -- Scroll offset
 opt.scrolloff = 12
@@ -26,4 +27,10 @@ opt.scrolloff = 12
 opt.termguicolors = true
 
 opt.isfname:append("@-@")
-opt.updatetime = 50
+opt.updatetime = 10
+
+-- prefe reading vertically
+opt.textwidth = 80
+
+-- cursor settings
+opt.guicursor = "i:block-blinkwait10-blinkon10-blinkoff10" -- same as above

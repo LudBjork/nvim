@@ -17,12 +17,12 @@ cmp.setup({
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
 		{ name = "luasnip", keyword_length = 2 },
-		{ name = "buffer",  keyword_length = 3 },
+		{ name = "buffer", keyword_length = 3 },
 	},
 	formatting = lsp_zero.cmp_format(),
 	mapping = cmp.mapping.preset.insert({
-		["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-		["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+		["<TAB>"] = cmp.mapping.select_next_item(cmp_select),
+		["<S-TAB>"] = cmp.mapping.select_prev_item(cmp_select),
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<C-Space>"] = cmp.mapping.complete(),
 	}),
@@ -35,6 +35,7 @@ local function organize_imports()
 		arguments = { vim.api.nvim_buf_get_name(0) },
 		title = "",
 	}
+
 	vim.lsp.buf.execute_command(params)
 end
 
@@ -57,8 +58,8 @@ vim.keymap.set("n", "<leader>oo", organize_imports) -- organise imports keymap
 -- Standard setup LSPs
 lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
-lspconfig.rust_analyzer.setup({})
 lspconfig.yamlls.setup({})
+lspconfig.rust_analyzer.setup({})
 
 -- Copied straight from the nvim-lspconfig README
 vim.api.nvim_create_autocmd("LspAttach", {
