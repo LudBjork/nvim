@@ -70,15 +70,13 @@ local plugins = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{ "elentok/format-on-save.nvim" },
-	-- install without yarn or npm
+	{ "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
 	{
-		"iamcco/markdown-preview.nvim",
-		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-		ft = { "markdown" },
-		build = function()
-			vim.fn["mkdp#util#install"]()
-		end,
+		"mrcjkb/rustaceanvim",
+		version = "^4", -- Recommended
+		ft = { "rust" },
 	},
+	{ "rust-lang/rust.vim" },
 }
 
 require("lazy").setup(plugins)
