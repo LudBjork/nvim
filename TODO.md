@@ -9,5 +9,8 @@ Plugins:
 - [x] Harpoon
 - [x] Show git diff
 - [x] Indent guides
-- [x] Folding 
+- [x] Folding
 - [x] Lualine
+- [x] RustaecanVim & RustVim
+- [x] Formatting on save
+- [x] MD preview (Glow)
