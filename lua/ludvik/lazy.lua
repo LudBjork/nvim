@@ -70,7 +70,7 @@ local plugins = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{ "elentok/format-on-save.nvim" },
-	{ "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
+	{ "davidgranstrom/nvim-markdown-preview" },
 	{
 		"mrcjkb/rustaceanvim",
 		version = "^4", -- Recommended
