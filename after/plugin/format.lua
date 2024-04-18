@@ -11,5 +11,6 @@ fos.setup({
 		typescript = formatters.prettierd,
 		markdown = formatters.prettierd,
 		lua = formatters.stylua,
+		rust = formatters.lsp,
 	},
 })

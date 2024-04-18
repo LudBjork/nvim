@@ -71,12 +71,6 @@ local plugins = {
 	},
 	{ "elentok/format-on-save.nvim" },
 	{ "davidgranstrom/nvim-markdown-preview" },
-	{
-		"mrcjkb/rustaceanvim",
-		version = "^4", -- Recommended
-		ft = { "rust" },
-	},
-	{ "rust-lang/rust.vim" },
 }
 
 require("lazy").setup(plugins)

@@ -5,8 +5,9 @@ Critique it all you want, if it works for me it works for me y'know.
 For plugins and other things I want to implement, see [TODO.md](/TODO.md).
 Will also add issues to keep track of complications.
 
-## Dependencies
+### Dependencies
 
-### ripgrep
+Use a package manager of your choice to install these:
 
-You'll need to install `ripgrep` on your preferred terminal. Since I'm a Mac user, I used `brew install ripgrep`.
+- ripgrep
+- pandoc

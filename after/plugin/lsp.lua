@@ -2,7 +2,7 @@ local lsp_zero = require("lsp-zero")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "tsserver", "lua_ls", "html", "marksman", "yamlls" },
+	ensure_installed = { "tsserver", "lua_ls", "html", "marksman", "rust_analyzer", "yamlls" },
 	handlers = {
 		lsp_zero.default_setup,
 	},
@@ -59,6 +59,7 @@ vim.keymap.set("n", "<leader>oo", organize_imports) -- organise imports keymap
 lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
 lspconfig.yamlls.setup({})
+lspconfig.rust_analyzer.setup({})
 
 -- Copied straight from the nvim-lspconfig README
 vim.api.nvim_create_autocmd("LspAttach", {

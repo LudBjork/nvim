@@ -34,5 +34,3 @@ opt.textwidth = 80
 
 -- cursor settings
 opt.guicursor = "i:block-blinkwait10-blinkon10-blinkoff10" -- same as above
---" ~/.config/nvim/init.lua
-vim.opt.shell = "/bin/bash"
