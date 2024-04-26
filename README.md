@@ -1,6 +1,6 @@
 # Personal NeoVim Setup
 
-!["startup_screen"]("./vim_startup_screen.png")
+!["startup_screen"](./vim_startup_screen.png)
 
 Critique it all you want, if it works for me it works for me y'know.
 
