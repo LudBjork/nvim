@@ -1,5 +1,7 @@
 # Personal NeoVim Setup
 
+!["startup_screen"]("./vim_startup_screen.png")
+
 Critique it all you want, if it works for me it works for me y'know.
 
 For plugins and other things I want to implement, see [TODO.md](/TODO.md).
