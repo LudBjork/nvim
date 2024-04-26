@@ -71,6 +71,7 @@ local plugins = {
 	},
 	{ "elentok/format-on-save.nvim" },
 	{ "davidgranstrom/nvim-markdown-preview" },
+	{ "startup-nvim/startup.nvim" },
 }
 
 require("lazy").setup(plugins)
