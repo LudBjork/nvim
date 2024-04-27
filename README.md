@@ -7,7 +7,7 @@
   - [Dependencies](#dependencies)
   <!--toc:end-->
 
-!["startup_screen"](./vim_startup_screen.png)
+!["startup_screen"](./vim_startup_screen2.png)
 
 ## DISCLAIMER
 
