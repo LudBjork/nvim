@@ -6,5 +6,6 @@ vim.keymap.set("n", "<leader>of", builtin.oldfiles, {})
 vim.keymap.set("n", "<leader>gf", builtin.git_files, {})
 vim.keymap.set("n", "<leader>gs", builtin.git_status, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
+vim.keymap.set("n", "<leader>fe", builtin.diagnostics, {})
 
 local actions = require("telescope.actions")
