@@ -7,10 +7,20 @@ fos.setup({
 		".local/share/nvim/lazy",
 	},
 	formatter_by_ft = {
-		typescriptreact = formatters.prettierd,
-		typescript = formatters.prettierd,
 		markdown = formatters.prettierd,
 		lua = formatters.stylua,
 		rust = formatters.lsp,
+		typescript = {
+			formatters.if_file_exists({
+				pattern = { ".prettierrc", ".prettierrc.*", "prettier.config.*" },
+				formatter = formatters.prettierd,
+			}),
+		},
+		typescriptreact = {
+			formatters.if_file_exists({
+				pattern = { ".prettierrc", ".prettierrc.*", "prettier.config.*" },
+				formatter = formatters.prettierd,
+			}),
+		},
 	},
 })
