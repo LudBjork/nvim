@@ -4,7 +4,7 @@ opt = vim.opt
 -- Numbers & Relative numbers
 opt.nu = true
 opt.relativenumber = true
-opt.numberwidth = 6
+opt.numberwidth = 10
 
 -- Tab settings
 opt.tabstop = 4
@@ -29,8 +29,8 @@ opt.termguicolors = true
 opt.isfname:append("@-@")
 opt.updatetime = 10
 
--- prefe reading vertically
+-- prefer reading vertically
 opt.textwidth = 80
 
 -- cursor settings
-opt.guicursor = "i:block-blinkwait10-blinkon10-blinkoff10" -- same as above
+opt.guicursor = "i:block-blinkwait10-blinkon10-blinkoff10"
