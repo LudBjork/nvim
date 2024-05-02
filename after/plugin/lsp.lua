@@ -19,7 +19,7 @@ cmp.setup({
 		{ name = "luasnip", keyword_length = 2 },
 		{ name = "buffer", keyword_length = 3 },
 	},
-	formatting = lsp_zero.cmp_format(),
+	formatting = lsp_zero.cmp_format({}),
 	mapping = cmp.mapping.preset.insert({
 		["<TAB>"] = cmp.mapping.select_next_item(cmp_select),
 		["<S-TAB>"] = cmp.mapping.select_prev_item(cmp_select),
@@ -78,11 +78,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
 		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 		vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-		vim.keymap.set("n", "<space>wa", vim.lsp.buf.add_workspace_folder, opts)
-		vim.keymap.set("n", "<space>wr", vim.lsp.buf.remove_workspace_folder, opts)
-		vim.keymap.set("n", "<space>wl", function()
-			print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-		end, opts)
 		vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, opts)
 		vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
 		vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, opts)
