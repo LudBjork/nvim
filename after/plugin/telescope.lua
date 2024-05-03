@@ -8,5 +8,3 @@ vim.keymap.set("n", "<leader>gs", builtin.git_status, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 vim.keymap.set("n", "<leader>fe", builtin.diagnostics, {})
 vim.keymap.set("n", "<leader>fs", builtin.current_buffer_fuzzy_find, {})
-
-local actions = require("telescope.actions")
