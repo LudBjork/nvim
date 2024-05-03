@@ -2,7 +2,7 @@ local lsp_zero = require("lsp-zero")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "tsserver", "lua_ls", "html", "marksman", "rust_analyzer", "yamlls" },
+	ensure_installed = { "tsserver", "lua_ls", "html", "marksman", "rust_analyzer", "yamlls", "jsonls" },
 	handlers = {
 		lsp_zero.default_setup,
 	},
@@ -39,6 +39,7 @@ local function organize_imports()
 	vim.lsp.buf.execute_command(params)
 end
 
+-- allow documentation and auto-complete when working w. Vim API
 require("neodev").setup()
 
 local lspconfig = require("lspconfig")
