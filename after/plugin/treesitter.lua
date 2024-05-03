@@ -1,7 +1,7 @@
 require("nvim-treesitter.install").compilers = { "gcc" }
 require("nvim-treesitter.configs").setup({
 	-- A list of parser names, or "all"
-	ensure_installed = { "lua", "typescript", "rust" },
+	ensure_installed = { "lua", "typescript", "rust", "json", "yaml" },
 	ignore_install = {},
 	modules = {},
 
