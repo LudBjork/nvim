@@ -15,6 +15,7 @@ require("nvim-treesitter.configs").setup({
 		"java",
 		"tmux",
 		"properties",
+		"terraform",
 	},
 	ignore_install = {},
 	modules = {},
