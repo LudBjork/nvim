@@ -8,17 +8,23 @@ vim.keymap.set("n", "<leader>a", function()
 	harpoon:list():add()
 end)
 
-vim.keymap.set("n", "<C-h>", function()
+-- I only set 5 because I consider focusing on more than that to be misuse of
+-- harpoon
+vim.keymap.set("n", "<leader>1", function()
 	harpoon:list():select(1)
 end)
-vim.keymap.set("n", "<C-t>", function()
+vim.keymap.set("n", "<leader>2", function()
 	harpoon:list():select(2)
 end)
-vim.keymap.set("n", "<C-s>", function()
+vim.keymap.set("n", "<leader>3", function()
 	harpoon:list():select(3)
 end)
-vim.keymap.set("n", "<C-n>", function()
+vim.keymap.set("n", "<leader>4", function()
 	harpoon:list():select(4)
+end)
+
+vim.keymap.set("n", "<leader>5", function()
+	harpoon:list():select(5)
 end)
 
 -- Toggle previous & next buffers stored within Harpoon list
@@ -29,7 +35,7 @@ vim.keymap.set("n", "<C-S-N>", function()
 	harpoon:list():next()
 end)
 
--- basic telescope configuration
+-- use telescope as GUI for Harpoon
 local conf = require("telescope.config").values
 local function toggle_telescope(harpoon_files)
 	local file_paths = {}
@@ -67,6 +73,9 @@ vim.keymap.set("n", "<leader>d3", function()
 end, { desc = "Pop specfic file" })
 vim.keymap.set("n", "<leader>d4", function()
 	table.remove(harpoon:list().items, 4)
+end, { desc = "Pop specfic file" }) -- Might delete this because <leader>dl does the same
+vim.keymap.set("n", "<leader>d5", function()
+	table.remove(harpoon:list().items, 5)
 end, { desc = "Pop specfic file" }) -- Might delete this because <leader>dl does the same
 
 local function remove_all()
