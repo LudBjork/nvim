@@ -1,5 +1,9 @@
 {
     "diagnostics.globals": [
         "opt"
+    ],
+    "diagnostics.disable": [
+        "undefined-global",
+        "missing-fields"
     ]
 }

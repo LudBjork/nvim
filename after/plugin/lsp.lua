@@ -19,7 +19,15 @@ cmp.setup({
 		{ name = "luasnip", keyword_length = 2 },
 		{ name = "buffer", keyword_length = 3 },
 	},
-	formatting = lsp_zero.cmp_format({}),
+	formatting = {
+		expandable_indicator = true,
+		fields = { "menu", "abbr", "kind" },
+		format = require("lspkind").cmp_format({
+			mode = "symbol", -- show only symbol annotations
+			maxwidth = 50, -- prevent the popup from showing more than provided characters
+			ellipsis_char = "...", -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead
+		}),
+	},
 	mapping = cmp.mapping.preset.insert({
 		["<TAB>"] = cmp.mapping.select_next_item(cmp_select),
 		["<S-TAB>"] = cmp.mapping.select_prev_item(cmp_select),
