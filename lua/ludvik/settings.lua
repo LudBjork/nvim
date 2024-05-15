@@ -32,5 +32,5 @@ opt.updatetime = 10
 -- prefer reading vertically
 opt.textwidth = 80
 
--- cursor settings
+-- cursor settings, blink when in insert mode
 opt.guicursor = "i:block-blinkwait10-blinkon10-blinkoff10"

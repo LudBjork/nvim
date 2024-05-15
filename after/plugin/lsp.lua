@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 local lsp_zero = require("lsp-zero")
 
 require("mason").setup()
