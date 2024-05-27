@@ -73,6 +73,23 @@ local plugins = {
 	{ "davidgranstrom/nvim-markdown-preview" },
 	{ "startup-nvim/startup.nvim" },
 	{ "onsails/lspkind.nvim" },
+	{
+		"christoomey/vim-tmux-navigator",
+		cmd = {
+			"TmuxNavigateLeft",
+			"TmuxNavigateDown",
+			"TmuxNavigateUp",
+			"TmuxNavigateRight",
+			"TmuxNavigatePrevious",
+		},
+		keys = {
+			{ "<C-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+			{ "<C-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+			{ "<C-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+			{ "<C-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+		},
+		lazy = false,
+	},
 	{ "folke/trouble.nvim" },
 }
 
