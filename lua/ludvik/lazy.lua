@@ -74,7 +74,7 @@ local plugins = {
 	{ "startup-nvim/startup.nvim" },
 	{ "onsails/lspkind.nvim" },
 	{
-		"christoomey/vim-tmux-navigator",
+		"christoomey/vim-tmux-navigator", -- DO NOT MOVE INTO OWN FILE
 		cmd = {
 			"TmuxNavigateLeft",
 			"TmuxNavigateDown",
