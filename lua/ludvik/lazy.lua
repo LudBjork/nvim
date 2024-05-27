@@ -73,6 +73,7 @@ local plugins = {
 	{ "davidgranstrom/nvim-markdown-preview" },
 	{ "startup-nvim/startup.nvim" },
 	{ "onsails/lspkind.nvim" },
+	{ "folke/trouble.nvim" },
 }
 
 require("lazy").setup(plugins)
