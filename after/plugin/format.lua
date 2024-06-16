@@ -10,6 +10,7 @@ fos.setup({
 		markdown = formatters.prettierd,
 		lua = formatters.stylua,
 		rust = formatters.lsp,
+		go = formatters.lsp,
 		typescript = {
 			formatters.if_file_exists({
 				pattern = { ".prettierrc", ".prettierrc.*", "prettier.config.*" },
