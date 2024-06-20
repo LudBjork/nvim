@@ -36,36 +36,13 @@ cmp.setup({
 	}),
 })
 
--- TypeScript specific, only for .ts or .tsx files
-local function organize_imports()
-	local params = {
-		command = "_typescript.organizeImports",
-		arguments = { vim.api.nvim_buf_get_name(0) },
-		title = "",
-	}
-
-	vim.lsp.buf.execute_command(params)
-end
-
 -- allow documentation and auto-complete when working w. Vim API
 require("neodev").setup()
 
 local lspconfig = require("lspconfig")
 
-lspconfig.tsserver.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-	commands = {
-		OrganizeImports = {
-			organize_imports,
-			description = "Organize Imports",
-		},
-	},
-})
-
-vim.keymap.set("n", "<leader>oo", organize_imports) -- organise imports keymap
-
 -- Standard setup LSPs
+lspconfig.tsserver.setup({})
 lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
 lspconfig.yamlls.setup({})
