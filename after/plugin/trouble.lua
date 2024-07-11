@@ -1,12 +1,4 @@
-require("trouble").setup({
-	action_keys = { -- key mappings for actions in the trouble list
-		-- map to {} to remove a mapping, for example:
-		-- close = {},
-		open_split = { "<C-x>" }, -- open buffer in new split
-		open_vsplit = { "<C-v>" }, -- open buffer in new vsplit
-		open_tab = { "<C-t>" }, -- open buffer in new tab
-	},
-})
+require("trouble").setup({})
 
 vim.keymap.set("n", "<leader>tt", function()
 	require("trouble").toggle()
