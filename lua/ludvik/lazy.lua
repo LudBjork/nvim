@@ -42,8 +42,7 @@ local plugins = {
 
 	--theme
 	{
-		"rose-pine/neovim",
-		name = "rose-pine",
+		"/ribru17/bamboo.nvim",
 	},
 	-- telescope
 	{
