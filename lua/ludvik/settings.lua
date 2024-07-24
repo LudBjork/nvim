@@ -4,12 +4,12 @@ opt = vim.opt
 -- Numbers & Relative numbers
 opt.nu = true
 opt.relativenumber = true
-opt.numberwidth = 10
+opt.numberwidth = 10 -- I'm legally blind when it comes to current line
 
 -- Tab settings
+-- Used when LSP unavailable
 opt.tabstop = 4
 opt.wrap = false
-opt.linebreak = true
 opt.shiftwidth = 4 -- auto-set indentation
 opt.expandtab = false -- use tabs as tabs, not spaces as tabs
 opt.smartindent = true
@@ -27,10 +27,7 @@ opt.scrolloff = 12
 opt.termguicolors = true
 
 opt.isfname:append("@-@")
-opt.updatetime = 10
+opt.updatetime = 10 -- default is 4 seconds
 
--- prefer reading vertically
+-- prefer reading code vertically
 opt.textwidth = 80
-
--- cursor settings
-opt.guicursor = "i:block-blinkwait10-blinkon10-blinkoff10"
