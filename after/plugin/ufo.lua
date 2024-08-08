@@ -9,3 +9,6 @@ require("ufo").setup({
 	end,
 	open_fold_hl_timeout = 5,
 })
+-- vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
+-- vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
+-- CORRESPONDING KEYMAPS 'zr' and 'zm' for not-global options
