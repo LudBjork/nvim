@@ -1,3 +1,8 @@
-require("bamboo").setup({ dim_inactive = true })
+require("tokyonight").setup({
+	dim_inactive = true,
+	style = "night",
+	styles = { functions = { bold = true }, sidebars = "bright" },
+	function() end,
+})
 
-vim.cmd.colorscheme("bamboo")
+vim.cmd.colorscheme("tokyonight")

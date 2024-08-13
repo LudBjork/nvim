@@ -42,7 +42,7 @@ local plugins = {
 
 	--theme
 	{
-		"/ribru17/bamboo.nvim",
+		"folke/tokyonight.nvim",
 	},
 	-- telescope
 	{
