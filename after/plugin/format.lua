@@ -23,5 +23,6 @@ fos.setup({
 				formatter = formatters.prettierd,
 			}),
 		},
+		json = formatters.lsp,
 	},
 })
