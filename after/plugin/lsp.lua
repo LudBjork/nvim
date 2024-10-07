@@ -2,7 +2,7 @@ local lsp_zero = require("lsp-zero")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "tsserver", "lua_ls", "gopls", "html", "marksman", "rust_analyzer", "yamlls", "jsonls" },
+	ensure_installed = { "ts_ls", "lua_ls", "gopls", "html", "marksman", "rust_analyzer", "yamlls", "jsonls" },
 	handlers = {
 		lsp_zero.default_setup,
 	},
@@ -42,7 +42,7 @@ require("neodev").setup()
 local lspconfig = require("lspconfig")
 
 -- Standard setup LSPs
-lspconfig.tsserver.setup({})
+lspconfig.ts_ls.setup({})
 lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
 lspconfig.yamlls.setup({})
