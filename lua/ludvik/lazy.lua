@@ -89,7 +89,43 @@ local plugins = {
 		},
 		lazy = false,
 	},
-	{ "folke/trouble.nvim" },
+	{
+		"folke/trouble.nvim",
+		opts = { focus = true }, -- for default options, refer to the configuration section for custom setup.
+		cmd = "Trouble",
+		keys = {
+			{
+				"fE",
+				"<cmd>Trouble diagnostics toggle<cr>",
+				desc = "Diagnostics (Trouble)",
+			},
+			{
+				"fe",
+				"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+				desc = "Buffer Diagnostics (Trouble)",
+			},
+			{
+				"<leader>bs",
+				"<cmd>Trouble symbols toggle <cr>",
+				desc = "Symbols (Trouble)",
+			},
+			{
+				"gt",
+				"<cmd>Trouble lsp_type_definitions toggle <cr>",
+				desc = "LSP type definitions (Trouble)",
+			},
+			{
+				"gd",
+				"<cmd>Trouble lsp_definitions toggle <cr>",
+				desc = "LSP definitions (Trouble)",
+			},
+			{
+				"gr",
+				"<cmd>Trouble lsp_references toggle <cr>",
+				desc = "LSP references (Trouble)",
+			},
+		},
+	},
 }
 
 require("lazy").setup(plugins)
