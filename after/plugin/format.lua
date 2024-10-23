@@ -23,6 +23,9 @@ fos.setup({
 				formatter = formatters.prettierd,
 			}),
 		},
-		json = formatters.lsp,
+		json = formatters.if_file_exists({
+			pattern = { ".prettierrc", ".prettierrc.*", "prettier.config.*" },
+			formatter = formatters.prettierd,
+		}),
 	},
 })
