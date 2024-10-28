@@ -80,7 +80,7 @@ local settings = {
 		margin = 5,
 		highlight = "TSString",
 		default_color = "#FFFFFF",
-		oldfiles_amount = 10,
+		oldfiles_amount = 0,
 	},
 	colors = {
 		background = "#1f2227",
