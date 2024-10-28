@@ -28,21 +28,12 @@ Use a package manager of your choice to install these:
 If Lazy is installing something that resets already existing TS-parsers. Do the
 following:
 
-Do TSInstall + one of the following in default MacOS terminal:
+```bash
+:checkhealth
+```
 
-"lua",
-"typescript",
-"tsx",
-"rust",
-"json",
-"yaml",
-"vimdoc",
-"dockerfile",
-"xml",
-"markdown",
-"proto",
-"javascript",
-"java",
-"tmux",
-"properties",
-"terraform",
+When presented with list of TS parsers that have faults, run
+
+```bash
+:TSInstall <parser>
+```
