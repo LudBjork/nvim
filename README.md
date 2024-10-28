@@ -24,3 +24,25 @@ Use a package manager of your choice to install these:
 
 - ripgrep
 - pandoc
+
+If Lazy is installing something that resets already existing TS-parsers. Do the
+following:
+
+Do TSInstall + one of the following in default MacOS terminal:
+
+"lua",
+"typescript",
+"tsx",
+"rust",
+"json",
+"yaml",
+"vimdoc",
+"dockerfile",
+"xml",
+"markdown",
+"proto",
+"javascript",
+"java",
+"tmux",
+"properties",
+"terraform",
