@@ -1,17 +1,2 @@
-require("tokyonight").setup({
-	dim_inactive = true,
-	style = "night",
-	styles = { functions = { bold = true } },
-	on_highlights = function(hl, c)
-		-- set telescope-bg transparent
-		hl.TelescopeNormal = {
-			fg = c.fg_dark,
-		}
-		hl.TelescopeBorder = {
-			fg = c.bg_dark,
-		}
-	end,
-	function() end,
-})
-
-vim.cmd.colorscheme("tokyonight")
+vim.g.gruvbox_material_enable_italic = 1
+vim.cmd.colorscheme("gruvbox-material")
