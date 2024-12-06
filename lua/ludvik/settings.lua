@@ -9,8 +9,8 @@ opt.numberwidth = 10 -- I'm legally blind when it comes to current line
 -- Tab settings
 -- Used when LSP unavailable
 opt.tabstop = 4
+opt.shiftwidth = 4
 opt.wrap = false
-opt.shiftwidth = 4 -- auto-set indentation
 opt.expandtab = false -- use tabs as tabs, not spaces as tabs
 opt.smartindent = true
 
@@ -31,3 +31,4 @@ opt.updatetime = 10 -- default is 4 seconds
 
 -- prefer reading code vertically
 opt.textwidth = 80
+opt.colorcolumn = "80" -- hint that you're reaching textwidth
