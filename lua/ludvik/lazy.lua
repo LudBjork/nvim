@@ -95,12 +95,12 @@ local plugins = {
 		cmd = "Trouble",
 		keys = {
 			{
-				"fE",
+				"<Space>fE",
 				"<cmd>Trouble diagnostics toggle<cr>",
 				desc = "Diagnostics (Trouble)",
 			},
 			{
-				"fe",
+				"<Space>fe",
 				"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
 				desc = "Buffer Diagnostics (Trouble)",
 			},
