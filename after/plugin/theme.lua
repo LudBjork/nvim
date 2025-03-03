@@ -1,9 +1,22 @@
-vim.g.gruvbox_material_background = "hard"
-vim.g.gruvbox_material_foreground = "mix"
+require("tokyonight").setup({
 
-vim.g.gruvbox_material_enable_bold = 1
-vim.g.gruvbox_material_disable_italic_comment = 0
-vim.g.gruvbox_material_dim_inactive_windows = 1
+	-- highlights better which window is active
+	dim_inactive = true,
 
--- Set all config before this line
-vim.cmd.colorscheme("gruvbox-material")
+	-- sets bg transparent to match terminal tokyonight theme
+	transparent = true,
+
+	style = "night",
+
+	-- all method names should be bold
+	styles = { functions = { bold = true } },
+
+	on_highlights = function(hl, c)
+		-- set telescope-bg transparent
+		hl.TelescopeNormal = {
+			fg = c.fg_dark,
+		}
+	end,
+})
+
+vim.cmd.colorscheme("tokyonight")

@@ -42,7 +42,10 @@ local plugins = {
 
 	--theme
 	{
-		"sainnhe/gruvbox-material",
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
 	},
 	-- telescope
 	{
