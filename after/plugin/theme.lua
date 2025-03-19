@@ -1,22 +1,14 @@
-require("tokyonight").setup({
+require("catppuccin").setup({
 
-	-- highlights better which window is active
-	dim_inactive = true,
+	flavour = "mocha",
 
-	-- sets bg transparent to match terminal tokyonight theme
-	transparent = true,
+	-- sets bg transparent to match terminal theme
+	transparent_background = true,
 
-	style = "night",
-
-	-- all method names should be bold
-	styles = { functions = { bold = true } },
-
-	on_highlights = function(hl, c)
-		-- set telescope-bg transparent
-		hl.TelescopeNormal = {
-			fg = c.fg_dark,
-		}
-	end,
+	styles = {
+		functions = { "bold" },
+		comments = { "italic" },
+	},
 })
 
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("catppuccin")
