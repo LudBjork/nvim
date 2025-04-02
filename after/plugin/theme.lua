@@ -1,6 +1,6 @@
 require("catppuccin").setup({
 
-	flavour = "mocha",
+	flavour = "latte",
 
 	-- sets bg transparent to match terminal theme
 	transparent_background = true,
