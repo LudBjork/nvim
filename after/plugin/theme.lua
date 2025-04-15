@@ -1,14 +1,14 @@
-require("catppuccin").setup({
+require("tokyonight").setup({
 
-	flavour = "mocha",
+	style = "night",
 
 	-- sets bg transparent to match terminal theme
-	transparent_background = true,
+	transparent = true,
 
 	styles = {
-		functions = { "bold" },
-		comments = { "italic" },
+		functions = { bold = true },
+		comments = { italic = true },
 	},
 })
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("tokyonight")

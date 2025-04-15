@@ -42,8 +42,8 @@ local plugins = {
 
 	--theme
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"folke/tokyonight.nvim",
+		lazy = true,
 		priority = 1000,
 	},
 	-- telescope
