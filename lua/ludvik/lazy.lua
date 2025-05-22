@@ -66,10 +66,6 @@ local plugins = {
 		opts = {},
 	},
 	{ "m4xshen/autoclose.nvim" },
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-	},
 	{ "elentok/format-on-save.nvim" },
 	{ "davidgranstrom/nvim-markdown-preview" },
 	{ "startup-nvim/startup.nvim" },
