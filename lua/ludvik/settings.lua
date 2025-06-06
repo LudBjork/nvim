@@ -1,3 +1,4 @@
+vim.cmd("language en_US")
 -- General short-hand that is used everywhere
 opt = vim.opt
 
