@@ -42,7 +42,7 @@ local plugins = {
 
 	--theme
 	{
-		"folke/tokyonight.nvim",
+		"shaunsingh/moonlight.nvim",
 		lazy = true,
 		priority = 1000,
 	},
