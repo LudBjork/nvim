@@ -11,6 +11,12 @@ fos.setup({
 		lua = formatters.stylua,
 		rust = formatters.lsp,
 		go = formatters.lsp,
+		javascript = {
+			formatters.if_file_exists({
+				pattern = { ".prettierrc", ".prettierrc.*", "prettier.config.*" },
+				formatter = formatters.prettierd,
+			}),
+		},
 		typescript = {
 			formatters.if_file_exists({
 				pattern = { ".prettierrc", ".prettierrc.*", "prettier.config.*" },
