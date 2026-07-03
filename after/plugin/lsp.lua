@@ -39,15 +39,15 @@ cmp.setup({
 -- allow documentation and auto-complete when working w. Vim API
 require("neodev").setup()
 
-local lspconfig = require("lspconfig")
-
 -- Standard setup LSPs
-lspconfig.ts_ls.setup({})
-lspconfig.marksman.setup({})
-lspconfig.lua_ls.setup({})
-lspconfig.yamlls.setup({})
-lspconfig.gopls.setup({})
-lspconfig.rust_analyzer.setup({})
+vim.lsp.enable({
+	"ts_ls",
+	"marksman",
+	"lua_ls",
+	"yamlls",
+	"gopls",
+	"rust_analyzer",
+})
 
 -- Copied straight from the nvim-lspconfig README
 vim.api.nvim_create_autocmd("LspAttach", {
