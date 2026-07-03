@@ -45,6 +45,12 @@ local plugins = {
 		lazy = true,
 		priority = 1000,
 	},
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
 	-- telescope
 	{
 		"nvim-telescope/telescope.nvim",
