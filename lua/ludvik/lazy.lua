@@ -33,9 +33,11 @@ local plugins = {
 	{ "hrsh7th/cmp-path" },
 	{ "hrsh7th/cmp-cmdline" },
 
-	-- tree-sitter
+	-- tree-sitter (main branch — Neovim 0.11+/0.12; does not support lazy-loading)
 	{
 		"nvim-treesitter/nvim-treesitter",
+		branch = "main",
+		lazy = false,
 		build = ":TSUpdate",
 	},
 
