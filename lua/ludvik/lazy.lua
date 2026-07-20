@@ -56,9 +56,11 @@ local plugins = {
 	-- telescope
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.5",
-		-- or
-		-- branch = '0.1.x',
+		-- master (untagged): its previewer was rewritten to use Neovim-native
+		-- vim.treesitter APIs. Required because nvim-treesitter is on `main`,
+		-- which removed the legacy API (parsers.ft_to_lang) that telescope
+		-- 0.1.5's previewer relied on.
+		branch = "master",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{
